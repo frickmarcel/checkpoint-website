@@ -1,0 +1,304 @@
+@font-face {
+  font-family: "Lato";
+  src: url("Lato/Lato-Bold.ttf");
+}
+*,
+::after,
+::before {
+  box-sizing: content-box;
+}
+
+:root {
+  font-size: 19px;
+  width: 800px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --c-article1: #eef0f2;
+  padding: 1rem;
+  --c-white: white;
+  line-height: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+article {
+  margin-bottom: 5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: Lato;
+  text-align: inline;
+  line-height: 3rem;
+  padding-left: 1rem;
+}
+h2,
+h3,
+h4 {
+  font-family: Lato;
+}
+.header {
+  margin: 1rem;
+}
+
+.logo {
+  width: 200px;
+}
+.nav-list {
+  padding: 0px;
+  display: flex;
+  font-size: 30px;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.b-mountain {
+  width: 100%;
+  height: 25rem;
+}
+.bild1 {
+  width: 100%;
+  height: 435px;
+  margin-top: 0.7rem;
+  margin-left: -0.7rem;
+}
+.bild2 {
+  width: 100%;
+  height: 435px;
+  margin-top: 0.7rem;
+  margin-left: -0.7rem;
+}
+.p1 {
+  padding-left: 1rem;
+  font-size: 1.5rem;
+}
+
+.article1 {
+  position: relative;
+  height: 46rem;
+  margin-bottom: 15rem;
+  background-color: var(--c-article1);
+}
+
+.article2 {
+  text-align: center;
+  background-color: #f5cac3;
+  padding: 3rem;
+}
+.article3 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: flex-start;
+  position: relative;
+  outline: 2px solid black;
+  border-radius: 10px;
+}
+.article4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: flex-start;
+  position: relative;
+  outline: 2px solid black;
+  border-radius: 10px;
+}
+.article4:nth-child(b + p) {
+  margin-left: 1rem;
+}
+.article3:nth-child(b + p) {
+  margin-left: 1rem;
+}
+
+.article6 {
+  padding: 100px;
+  background-color: #a3b18a;
+  position: relative;
+  text-align: center;
+}
+.s-article {
+  font-size: 1.2rem;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+}
+.article7 {
+  flex: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: black;
+  color: var(--c-white);
+}
+.p2 {
+  font-size: 2vh;
+}
+
+.container {
+  padding: 1rem;
+}
+.footer-lb {
+  text-align: center;
+  text-decoration: underline;
+  color: gray;
+}
+.nav-list-footer {
+  height: 20rem;
+  word-spacing: 1rem;
+  list-style: none;
+  display: list-item;
+  flex-direction: column;
+  text-align: center;
+  line-height: 3rem;
+  color: var(--c-white);
+}
+.nav-list-footer li a:link {
+  color: var(--c-white);
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: var(--c-white);
+}
+.nav-list-footer:link {
+  color: var(--c-white);
+}
+
+span {
+  display: inline-block;
+  padding: 0.3rem;
+  border: 3px solid black;
+  border-radius: 7px;
+  text-align: center;
+  justify-content: center;
+}
+.container2 a {
+  color: black;
+}
+
+@media screen and (min-width: 1200px) {
+  * {
+    box-sizing: content-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  :root {
+    width: 92rem;
+  }
+
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav {
+    margin-right: 25%;
+  }
+  .nav-list {
+    gap: 3rem;
+  }
+  /*
+  .nav {
+    justify-content: center;
+  }
+  .logo {
+    display: flex;
+
+    justify-content: flex-start;
+  }
+  */
+  .b-mountain {
+    width: 100%;
+    height: 46rem;
+  }
+  h1 {
+    margin-top: -30rem;
+  }
+  .s-article {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 55%;
+    margin-left: 22%;
+  }
+  .article1 {
+    text-align: justify;
+    flex-wrap: wrap;
+    color: var(--c-white);
+    margin-bottom: 2rem;
+  }
+  .article2 {
+    padding: 0px;
+    display: grid;
+    align-items: center;
+    height: 20rem;
+    width: 100%;
+  }
+  .article3 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 38%;
+  }
+  .article4 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+
+    width: 38%;
+  }
+  .article6 {
+    align-content: center;
+    padding: 0px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    width: 100%;
+    text-align: center;
+  }
+  .restriction {
+    margin-left: 25%;
+    width: 50%;
+    text-align: center;
+  }
+  .container2 {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-list-footer {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    padding: 0px;
+    color: var(--c-white);
+    height: 10rem;
+    gap: 3rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    color: white;
+  }
+
+  .article7 {
+    display: flex;
+    padding-top: 5rem;
+
+    background-color: black;
+
+    justify-content: center;
+  }
+
+  p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .container3 {
+    margin-left: 1rem;
+    width: 50rem;
+  }
+
+  .container2 a {
+    color: black;
+  }
+}
